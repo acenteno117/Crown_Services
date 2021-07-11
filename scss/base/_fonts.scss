@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// 100 - Thin
+// 200 - Extra Light, Ultra Light
+// 300 - Light
+// 400 - Normal, Book, Regular
+// 500 - Medium
+// 600 - Semi Bold, Demi Bold
+// 700 - Bold
+// 800 - Extra Bold, Ultra Bold
+// 900 - Black, Heavy
+
+// Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+// Moserrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
+// Font Awesome 4.7.0
+// @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+// //Custom Font
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../assets/BebasNeue-Regular.eot");
+  src: url("../assets/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../assets/BebasNeue-Regular.woff2") format("woff2"),
+  url("../assets/BebasNeue-Regular.woff") format("woff"),
+  url("../assets/BebasNeue-Regular.otf"),
+  url("../assets/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {  font-family: 'BebasNeue';  src: url("/public/premium/fonts/Bebas_Neue/Bebas_Neue_Regular/Bebas_Neue_Regular.eot");  src: url("/public/premium/fonts/Bebas_Neue/Bebas_Neue_Regular/Bebas_Neue_Regular.eot?#iefix") format("embedded-opentype"),  url("/public/premium/fonts/Bebas_Neue/Bebas_Neue_Regular/Bariol_Regular.woff") format("woff"),  url("/public/premium/fonts/Bebas_Neue/Bebas_Neue_Regular/Bebas_Neue_Regular.ttf ") format("truetype");
+// font-weight: normal;
+// font-style: normal;
+// }
+
+
+
+// //End Custom Font

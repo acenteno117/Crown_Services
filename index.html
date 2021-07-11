@@ -1,0 +1,488 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="pencilblueApp">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at Crown Services, Inc</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/public/cms_base/version/935a51c32c21711dedacab4a6359b01c78d0912f/css/general_styles.css">
+  <!-- <link rel="stylesheet" type="text/css" href=""> -->
+  <link rel="stylesheet" type="text/css" href="assets/public/premium/css/premium_custom_styles.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="assets/public/cms_base/version/935a51c32c21711dedacab4a6359b01c78d0912f/compiled_bower/required_bower_scripts.min.js"></script>
+</head>
+<body id="premium-body" ng-controller="PencilBlueController">
+
+
+  <div id="src-tracking-loader" ng-controller="SourceTrackingFrontController"></div>
+
+  <!-- Header -->
+  <header id="back-top">
+    <!-- Top navbar -->
+    <section class="top-navbar">
+
+      <!-- Container -->
+      <div class="container">
+
+      </div>
+      <!-- End Container -->
+
+      <!-- Navbar default -->
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Container -->
+        <div class="container">
+
+          <!-- Navbar mobile -->
+          <div class="navbar-header">
+            <!-- Navbar toggle -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- End Navbar toggle -->
+
+            <!-- Logo desktop -->
+            <a href="/" class="navbar-brand visible-lg visible-md" title="Crown Services, Inc Careers" alt="Crown Services, Inc Careers">
+              <img src="img/site-logo.png" class="img-responsive" alt="Crown Services, Inc Careers">
+            </a>
+            <!-- End Logo desktop -->
+
+            <!-- Logo mobile -->
+            <a href="/" class="navbar-brand visible-xs visible-sm" title="Crown Services, Inc Careers" alt="Crown Services, Inc Careers">
+              <img src="img/site-logo-mobile.png" class="img-responsive" alt="Crown Services, Inc Careers">
+            </a>
+            <!-- End Logo mobile -->
+          </div>
+          <!-- End Navbar mobile -->
+
+          <!-- Navbar collapse -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <!-- Navbar nav -->
+            <ul class="nav navbar-nav">
+              <!-- Navigation -->
+              <!-- ^navigation^ -->
+              <li class="active">
+                <a href="#" target="">
+                  Home
+                </a>
+              </li>
+              <li class="">
+                <a href="#" target="">
+                  Join Our Team
+                </a>
+              </li>
+              <li class="">
+                <a href="#" target="">
+                  Resource Center
+                </a>
+              </li>
+              <li class="">
+                <a href="#" target="">
+                  Our Story
+                </a>
+              </li>
+              <li class="">
+                <a href="#" target="">
+                  Blog
+                </a>
+              </li>
+              <li class="">
+                <a href="#" target="">
+                  Local Offices
+                </a>
+              </li>
+              <li class="">
+                <a href="#" target="">
+                  Contact
+                </a>
+              </li>
+              <li class="">
+                <a href="#" target="">
+                  All Jobs
+                </a>
+              </li>
+              <!-- End Navigation -->
+              <li class="visible-xs">
+                <a href="/join" title="Join Our Talent Network">Join Our Talent Network</a>
+              </li>
+            </ul>
+            <!-- End Navbar nav -->
+          </div>
+          <!-- End Navbar collapse -->
+        </div>
+        <!-- Container -->
+      </nav>
+      <!-- End Navbar default -->
+    </section>
+    <!-- End Top navbar -->
+
+
+
+  </header>
+  <!-- End Header -->
+  <!-- Landing page -->
+  <section class="landing-banner">
+    <div class="container">
+      <div class="row">
+        <div <div class="col-xs-12 col-sm-12">
+          <div class="banner-text">
+            <h2><span>Careers</span> at Crown Services</h2>
+            <div class="btn-text">
+              <a href="#" class="btn btn-primary">Jobs by Category</a>
+              <a href="#" class="btn btn-primary">Jobs by Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Desktop Search -->
+    <div class="search-desktop-home hidden-xs">
+      <!-- Search box -->
+      <div class="search-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+              <div class="search-box-content">
+
+                <!-- <h1>Search For Jobs</h1> -->
+
+                <!-- Search bar -->
+                <!-- ^tmp_elements=search_bar^ -->
+                <script type="text/javascript">
+                var countryDropdownEnabled = false;
+                </script>
+
+                <div id="search-bar" class="" ng-controller="SearchBarController">
+                  <div class="search-bar-element search-field-container">
+                    <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+                    <input id="search-keywords-field" type="text" class="search-bar-keyword-field form-control" ng-model="keywordInput"
+                    ng-keydown="checkKeywordKeydown($event)" placeholder="Job Title or Category">
+                  </div>
+                  <div class="search-bar-element search-field-container search-location-field">
+                    <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                    <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field " ng-keydown="checkLocationKeydown($event)"
+                    ng-model="locationInput" ng-change="getSuggestions()" placeholder="City or Postal Code">
+                    <ul id="suggestions" class="list-group autocomplete-list suggestions-list" role="list" ng-show="locationSuggestions.length > 0" ng-cloak>
+                      <li ng-repeat="location in locationSuggestions" class="blockSpan list-group-item" ng-click="addToSelectedTags($index)"
+                      ng-mouseover="$parent.selectedIndex=$index" ng-class="{active : selectedIndex===$index}">{{$parent.googlePlacesAutocompleteEnabled ? location.description : location}}</li>
+                      <li ng-repeat-end class="autocompletefooter" ng-if="googlePlacesAutocompleteEnabled"><img src='/public/cms_base/img/powered_by_google_on_white.png' align='right'class='google-footer'></li>
+                    </ul>
+                  </div>
+                  <div class="search-bar-element search-widget-container">
+                    <a ng-href="{{searchUrl()}}" id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text">Search</a>
+                  </div>
+                </div>
+                <!-- End Search bar -->
+
+                <!-- View all jobs -->
+                <p class="link-center">
+                  <a href="/search" class="view-all-jobs" title="View All Jobs at Crown Services, Inc">View All Jobs at Crown Services, Inc</a>
+                </p>
+                <!-- End View all jobs -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Search box -->
+
+    </div>
+    <!-- End Desktop Search -->
+    <!-- Mobile Search -->
+    <div id="SearchBoxMobile" class="search-mobile collapsed" aria-expanded="false">
+      <!-- Search box -->
+      <div class="search-box visible-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <div class="search-box-content">
+
+                <!-- Search bar -->
+                <!-- ^tmp_elements=search_bar^ -->
+                <script type="text/javascript">
+                var countryDropdownEnabled = false;
+                </script>
+
+                <div id="search-bar" class="" ng-controller="SearchBarController">
+                  <div class="search-bar-element search-field-container">
+                    <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+                    <input id="search-keywords-field" type="text" class="search-bar-keyword-field form-control" ng-model="keywordInput"
+                    ng-keydown="checkKeywordKeydown($event)" placeholder="Job Title or Category">
+                  </div>
+                  <div class="search-bar-element search-field-container search-location-field">
+                    <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                    <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field " ng-keydown="checkLocationKeydown($event)"
+                    ng-model="locationInput" ng-change="getSuggestions()" placeholder="City or Postal Code">
+                    <ul id="suggestions" class="list-group autocomplete-list suggestions-list" role="list" ng-show="locationSuggestions.length > 0" ng-cloak>
+                      <li ng-repeat="location in locationSuggestions" class="blockSpan list-group-item" ng-click="addToSelectedTags($index)"
+                      ng-mouseover="$parent.selectedIndex=$index" ng-class="{active : selectedIndex===$index}">{{$parent.googlePlacesAutocompleteEnabled ? location.description : location}}</li>
+                      <li ng-repeat-end class="autocompletefooter" ng-if="googlePlacesAutocompleteEnabled"><img src='/public/cms_base/img/powered_by_google_on_white.png' align='right'class='google-footer'></li>
+                    </ul>
+                  </div>
+                  <div class="search-bar-element search-widget-container">
+                    <a ng-href="{{searchUrl()}}" id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text">Search</a>
+                  </div>
+                </div>
+                <!-- End Search bar -->
+
+                <!-- View all jobs -->
+                <p class="link-center">
+                  <a href="/search" class="view-all-jobs" title="View All Jobs at Crown Services, Inc">View All Jobs at Crown Services, Inc</a>
+                </p>
+                <!-- End View all jobs -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Search box -->
+    </div>
+    <!-- End Mobile Search -->
+  </section>
+  <!-- End Landing page -->
+  <!-- Mobile search button -->
+  <button type="button" class="navbar-toggle search-toggle-button-mobile collapsed hidden-xs" data-toggle="collapse" data-target="#SearchBoxMobile" aria-expanded="false" title="Search">
+    <span class="sr-only">Toggle search</span>
+    <i class="fa fa-search"></i>
+  </button>
+  <!-- End Mobile search button -->
+
+  <section class="home-info">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="bg-info">
+            <p>Tired of looking at ads, filling out applications only to not hear back about the job? Why not try a different approach – working with Crown Services, Inc., to find a job you enjoy.</p>
+
+              <p>Every day, we receive a list of new job openings for skilled workers like you. Employers are looking to fill open positions with talented individuals and we make connecting with them easier than ever. Not only will we try to help you find a great position, we share our knowledge of job searching etiquette and best practices with you so you can be as prepared as possible.</p>
+              <ul class="bg-info-ul">
+                <li><span class="bold-ul">1.</span> We help you get noticed by the right people and companies.</li>
+                <li><span class="bold-ul">2.</span> We make the job search process easier and shorter.</li>
+                <li><span class="bold-ul">3.</span> We provide personal guidance in your job search.</li>
+              </ul>
+
+              <!-- <ol class="ol-info hidden-xs hidden-sm hidden-md hidden-lg">
+                <li>We help you get noticed by the right people and companies.</li>
+                <li>We make the job search process easier and shorter.</li>
+                <li>We provide personal guidance in your job search.</li>
+              </ol> -->
+
+              <p>Get noticed and land a job that matches your qualifications at companies that are hiring! Crown Services Inc. staff is ready to support your efforts in finding a job. Text, E-mail, Call or Apply today!
+              </p>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <div class="new-position">
+                <h2>SEARCH FOR A NEW POSITION</h2>
+                <p>Crown Services, Inc., offers an <b>online job search tool</b> to make it easy to find the career that’s right for you.</p>
+                <p><b>Have a question?</b> Check out our Frequently Asked Questions document below.</p>
+                <div class="faq-info">
+                  <a href="/" title="Frequently Asked Questions" class="btn btn-general">Frequently Asked Questions</a>
+                </div>
+
+                </div>
+                </div>
+        </div>
+      </div>
+
+<!-- seccion de follow us -->
+  <section class="bg-follow">
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <h2>Follow Us</h2>
+
+                  <ul class="social-follow">
+                            <li><a href="#" class="" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            Crown Services Inc.</a></li>
+                            <li><a href="#" class="" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
+                              @Crown Services Inc.</a></li>
+                            <li><a href="#" class="" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            Crown Services Inc.</a></li>
+                            <li><a href="#" class="" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i>
+                            Crown Services Inc.</a></li>
+                        </ul>
+
+              </div>
+            </div>
+        </div>
+
+      </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <!-- footer Logo -->
+            <div class="logo-footer">
+              <img src="img/site-logo-footer.png" class="img-responsive" alt="Crown Services, Inc Careers">
+          </div>
+          </div>
+
+          <div class="nav-footer-container-mobile visible-xs">
+            <!-- nav footer -->
+            <div class="col-xs-12">
+              <ul class="nav-footer">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resource Center</a></li>
+                <li><a href="#">Local offices</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><b>Join Our Team</b></a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <!-- end nav footer -->
+          </div>
+
+          <div class="nav-footer-container-desktop hidden-xs">
+            <div class="col-sm-4 col-md-5">
+              <ul class="nav-footer">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resource Center</a></li>
+                <li><a href="#">Local offices</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-2 col-md-2">
+              <ul class="nav-footer">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+              <ul class="nav-footer">
+                <li><a href="#"><b>Join Our Team</b></a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- social footer -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-5">
+            <div class="social-footer">
+              <ul>
+                <li><a href="#"  title="Facebook"><i class="fa fa-facebook-square blue" aria-hidden="true"></i></a></li>
+                <li><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="#" title="Instagram"><span class="sr-only">Instagram</span><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End social footer -->
+
+          <!-- badges footer -->
+          <div class="col-xs-12 col-sm-7">
+            <div class="badges">
+                <ul>
+                    <li>
+                        <img src="img/gold-badge.png" alt="National Quality Approval badge">
+                    </li>
+                    <li>
+                        <img src="img/wbenc-badge.png" alt="WBENC badge">
+                    </li>
+                    <li>
+                        <img src="img/asa-badge.png" alt="American Staffing Assoc. badge">
+                    </li>
+                </ul>
+
+            </div>
+          </div>
+          <!-- end badges footer -->
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="copy-footer">
+              <p>2019 Crown Services, Inc.<br class="visible-xs"> All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9bDtzse0NKvnFFtJOY-G3DJMwSuZzHg&libraries=places"></script>
+    <script type="text/javascript" src="assets/public/cms_base/version/935a51c32c21711dedacab4a6359b01c78d0912f/angular/scripts/tn_scripts.min.js"></script>
+
+    <!-- Bootstrap Grid -->
+    <div id="forh-bs-grid" style="position: fixed; top: 0px; left: 0px; z-index: 1000000; width: 100%; height: 100%; pointer-events: none; display:none">
+      <div class="container" style="height: 100%">
+        <div class="row" style="height: 100%">
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">1</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">2</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">3</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">4</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">5</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">6</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">7</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">8</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">9</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">10</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">11</div>
+          </div>
+          <div class="col-sm-1" style="position: relative; height: 100%; background-color: rgba(76, 199, 142, 0.2);">
+            <div style="display: flex; justify-content: center; height: 100%; background-color:rgba(199, 142, 76, 0.2); opacity: 0.8">12</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Bootstrap Grid -->
+
+    <!-- Bootstrap Grid Switch -->
+    <div class="grid-switch">
+      <script type="text/javascript" src="assets/extensions/bootstrap-grid/extension.js"></script>
+      <link rel="stylesheet" href="assets/extensions/bootstrap-grid/style.css">
+
+      <label class="switch">
+        <input type="checkbox" id="bootstrap-grid" onclick="TurnOnOff();">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <!-- Bootstrap Grid Switch -->
+
+  </body>
+  </html>

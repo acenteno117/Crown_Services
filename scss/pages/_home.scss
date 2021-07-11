@@ -1,0 +1,427 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.landing-banner{
+  background: url("../img/banner-mobile.png") no-repeat center center;
+  background-size: cover;
+  height: 790px; // -> Always
+  position: relative;
+  .banner-text {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    left: 0;
+    h2{
+      margin-bottom: 20px;
+      text-align: center;
+      color: $white;
+
+      span{
+        font-weight: bold;
+
+      }
+    }
+
+    .btn-text{
+      text-align: center;
+
+
+      .btn,btn-primary{
+        background: rgba(0,0,0,0.4);
+        border: 2px solid $white;
+        padding: 19px 0px;
+        text-align: center;
+        display: block;
+        max-width: 216px;
+        margin: 0 auto;
+        margin-top: 25px;
+        font-size:18px;
+        font-weight: bold;
+
+        @include on-event{
+          background: $black;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+// .content-banner{
+//   background: url("../img/content-banner-mobile.png") no-repeat center center;
+//   background-size: cover;
+//   height: 240px;
+//   position: relative;
+// }
+
+.home-info{
+  padding-top: 40px;
+  text-align: center;
+
+  .bg-info{
+    padding: 36px 35px;
+    background: $primary-color;
+    text-align: center;
+
+
+    p{
+      color: $white;
+      font-weight: bold;
+
+    }
+    ul{
+
+      li{
+        color:$white;
+        font-weight: normal;
+        list-style: none;
+       text-align: center;
+       padding: 8px;
+      // padding-inline-start: 0;
+
+      }
+
+    }
+    .bg-info-ul{
+        // padding-inline-start: 0;
+        padding-inline-start: 0px;
+        .bold-ul{
+          font-weight: bold;
+          // color: red;
+
+        }
+    }
+  }
+
+  .bg-follow{
+    h2 {
+      font-size: 60px;
+      font-family: $secondary-font;
+      text-align: center;
+      padding: 25px;
+      margin: 15px;
+      padding-bottom: 0px;
+    }
+  }
+  .new-position{
+    h2{
+      margin-top: 35px;
+      font-family: $secondary-font;
+      text-align: center;
+    }
+    p{
+      margin-bottom: 25px;
+      color: #636363;
+    }
+
+    .faq-info{
+
+      a{
+        font-size: 18px;
+        padding: 17px 26px;
+        @include on-event{
+
+            background: $primary-color;
+            //opacity: 0.7;
+            transition: all 0.3s ease;
+          }
+
+      }
+    }
+
+  }
+
+}
+
+.social-follow {
+  background: #f0f0fc;
+  list-style: none;
+  border-radius: 10px;
+  margin: 40px 0px;
+  text-align: center;
+  padding: 0px 0;
+  li{
+    padding: 15px 0px;
+    a{
+
+       @include on-event{
+          opacity: 0.7;
+          transition: all 0.3s ease;
+        }
+
+      font-size: 18px;
+      color: #4267b2;
+
+      white-space: pre-line;
+      i {
+        font-size: 63px;
+        display: inline-block;
+        text-align: center;
+        &.fa-facebook-square{
+          color: #4267b2;
+
+        }
+        &.fa-twitter{
+          color:#1da1f2;
+
+        }
+        &.fa-linkedin-square{
+          color:#0073b1;
+
+        }
+        &.fa-instagram{
+          color:#9a1db8;
+
+        }
+      }
+    }
+
+  }
+}
+
+
+@media (min-width: 768px){
+
+  .landing-banner{
+    background: url("../img/banner.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+
+    .banner-text {
+      position: absolute;
+      width: 100%;
+      top: 200px;
+
+      h2{
+        margin-bottom: 20px;
+        text-align: center;;
+        color: $white;
+
+
+        span{
+          font-weight: bold;
+
+        }
+      }
+
+      .btn-text{
+        text-align: center;
+
+
+        .btn,btn-primary{
+          background: rgba(0,0,0,0.4);
+          border: 1px solid $white;
+          padding: 15.5px 15px;
+          text-align: center;
+          display: block;
+          width: 220px;
+          margin: 0 auto;
+          margin-top: 25px;
+          font-size:18px;
+          font-weight: bold;
+
+          @include on-event{
+            background: $black;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .home-info{
+
+    .new-position{
+       text-align: center;
+      .faq-info{
+
+        a{
+          font-size: 20px;
+          margin-top: 5px;
+          padding: 17px 40px;
+        }
+      }
+      h2{
+        margin-top: 34px;
+        margin-bottom: 30px;
+      }
+      p{
+      padding: 0px;
+      margin-bottom: 40px;
+      }
+    }
+    .bg-info{
+      text-align: center;
+      // padding-inline-start: 10px;
+      // width: 556px;
+       ul{
+          // padding-inline-start: 0;
+          padding-inline-start: 32px;
+
+      }
+    }
+  }
+
+
+}
+
+@media (min-width: 992px){
+  .home-info .new-position {
+    text-align: left;
+}
+
+  .landing-banner{
+    height:920px;
+  }
+
+  .home-info .new-position h2 {
+    font-size: 52px;
+    text-align: left;
+  }
+  .home-info{
+    .bg-info {
+    text-align: left;
+      ul {
+        li {
+          text-align: left;
+          padding-left: 42px;
+        }
+      }
+    }
+    .bg-follow {
+      h2 {
+        margin-top: 45px;
+        margin-bottom: 0px;
+      }
+    }
+
+  }
+
+  .social-follow{
+    display: inline-flex;
+    border-radius: 25px;
+    list-style: none;
+    padding: 27px 0;
+    margin-top: 25px;
+    width: 100%;
+
+    li{
+      width: 25%;
+      a {
+        white-space: nowrap;
+        display: inline-flex;
+        line-height: 63px;
+        font-size: 17px;
+      @include on-event{
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        background: rgba(0,0,0,0);
+        text-decoration: none;
+        i{
+          background: rgba(0,0,0,0);
+          text-decoration: none;
+        }
+      }
+
+      i{
+        margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px){
+
+  .landing-banner{
+
+    .banner-text{
+      top: 366px;
+
+      h2{
+
+        text-align: center;
+
+        color: $white;
+        font-size: 72px;
+
+
+        span{
+          font-weight: bold;
+
+        }
+      }
+      .btn-text{
+
+        .btn,btn-primary{
+          display: inline-block;
+          font-size:18px;
+          margin: 28px;
+          font-size: 19px;
+          border-radius: 5px;
+        }
+      }
+
+    }
+  }
+
+  .faq-info {
+    a{
+      @include on-event{
+
+        background: $primary-color;
+        //opacity: 0.7;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  .home-info {
+     .bg-info {
+
+       p {
+         font-size: 18px;
+      }
+    }
+
+
+  }
+  .social-follow{
+    display: inline-flex;
+    border-radius: 25px;
+    list-style: none;
+    padding: 27px 0;
+    margin-top: 25px;
+    width: 100%;
+
+    li{
+      width: 25%;
+      a {
+        white-space: nowrap;
+        display: inline-flex;
+        line-height: 63px;
+        font-size: 18px;
+      @include on-event{
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        background: rgba(0,0,0,0);
+        text-decoration: none;
+        i{
+          background: rgba(0,0,0,0);
+          text-decoration: none;
+        }
+      }
+
+      i{
+        margin-right: 5px;
+        }
+      }
+    }
+  }
+}
